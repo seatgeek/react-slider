@@ -2,19 +2,6 @@
  * @jsx React.DOM
  */
 
-// Slider, a standalone component.
-// <Slider width="" leftWidth="" rightWidth=""
-// leftNumber="" rightNumber="">
-//
-// Arguments:
-//  Integer width, number of pixels the slider bar is
-//  Integer leftWidth, rightWidth, number of pixels to leave
-//    between each slider handle, if wanted
-//  Integer leftNumber: minimum number the slider represents
-//  Integer rightNumber: maximum number the slider represents
-//  Boolean onlyUpdateOnRelease: whether the update function is only called when
-//   the handle is released, rather than each small movement of the slider
-
 var Slider = React.createClass({
   propTypes: {
     outerWidth: React.PropTypes.number,
@@ -193,7 +180,8 @@ var Slider = React.createClass({
             direction = targetClassName.match(/(\w+)Number/)[1],
        otherDirection = this.getOtherDirection(direction),
            inputValue = e.target.value,
-          targetValue = inputValue.charAt(0) === '>' ? inputValue.substr(2) : inputValue.substr(1);
+             truncate = this.props.unit.length,
+          targetValue = inputValue.charAt(0) === '>' ? inputValue.substr(truncate + 1) : inputValue.substr(truncate);
 
     // Restrictions on entered values. Storage of temporary value when user clears
     // input field.
