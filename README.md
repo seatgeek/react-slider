@@ -20,7 +20,7 @@ Today we're happy to release this two-handled slider implementation written in R
 
 ### Documentation
 
-The `Slider` component can be rendered into the DOM like any other React component. It takes the following arguments, the types of which are all enforced by React:
+The `Slider` component can be rendered into the DOM like any other React component. It works on Chrome, Safari, Firefox, and Internet Explorer down to IE9. It takes the following arguments, the types of which are all enforced by React:
 
 (optional) **Number** `outerWidth`
 
