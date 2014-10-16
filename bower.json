@@ -6,7 +6,7 @@
     "Gareth Tan <garethwtan@gmail.com>"
   ],
   "description": "A React slider component with two handles.",
-  "main": "src/Slider.jsx"
+  "main": "src/Slider.jsx",
   "keywords": [
     "react",
     "slider",
