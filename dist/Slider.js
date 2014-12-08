@@ -163,7 +163,7 @@ var Slider = React.createClass({displayName: 'Slider',
   handleFocus: function(e) {
     var   stateObject = {},
       targetClassName = e.target.className,
-            direction = targetClassName.match(/(\w+)Number/)[1];
+            direction = targetClassName.match(/(\w+)Number/)[1],
                 value = e.target.value;
     stateObject[targetClassName] = '';
     stateObject.storedNumber = this.state[targetClassName];
