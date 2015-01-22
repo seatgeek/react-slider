@@ -12,7 +12,7 @@
     "slider",
     "range"
   ],
-  "license": "MIT",
+  "license": "BSD2",
   "ignore": [
     "**/.*",
     "node_modules",
