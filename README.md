@@ -1,5 +1,6 @@
-A Slider in React
-===
+# A Slider in React
+
+> This repository is no longer maintained. Pull requests will still be merged.
 
 A few months ago we launched the Omnibox, a single reconfigurable ticket-buying interface that replaced our old static listings and a thicket of popup windows. The Omnibox is written entirely in React, Facebook's new user interface framework, and in doing this we had to come up with our own solutions to user interface elements and innovate where we could.
 
