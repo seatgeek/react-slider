@@ -96,6 +96,10 @@ var Slider = React.createClass({
     var addedState = this.addPositionsFromNumbers(stateObject, this.props.rightNumber);
     this.setState(addedState);
   },
+  componentWillUnmount: function() {
+    document.removeEventListener("mouseup", this.sliderUpdater);
+    document.removeEventListener("touchend", this.sliderUpdater);
+  },
   // a function of props and state
   moveConditionsMet: function(state) {
     var leftWithinBounds  = state.left >= 0 && state.left < this.props.width;
